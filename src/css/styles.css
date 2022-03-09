@@ -1,0 +1,626 @@
+@font-face {
+  font-family: "Avenir";
+  src: url("fonts/AvenirLTStd-Black.woff2") format("woff2"),
+    url("fonts/AvenirLTStd-Black.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("fonts/AvenirLTStd-Black.woff2") format("woff2"),
+    url("fonts/AvenirLTStd-Black.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("fonts/AvenirLTStd-Book.woff2") format("woff2"),
+    url("fonts/AvenirLTStd-Book.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Avenir";
+  src: url("fonts/AvenirLTStd-Roman.woff2") format("woff2"),
+    url("fonts/AvenirLTStd-Roman.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --color-primary: #dd1f33;
+  --color-background: #f3f4f5;
+  --color-body-darker: #5b5b5b;
+  --color-border: #d4d4d4;
+  --border-redius: 25px;
+}
+#lqo {
+	/* Track */
+	/* Handle */
+	/* Handle on hover */
+	/* typography */
+	/* button */
+	/* grid */
+	/* btn-container */
+	/* base */
+	/* top-bar */
+	/* viewnote */
+	/* background */
+	/* z index */
+	/* dropdown modify */
+	/* hide dorpdown downarrow */
+	/* table */
+	/* popup icon */
+	/* note input */
+	/* scroler bar */
+	/* scorolbar */
+	/* running-tally */
+}
+ #lqo .App {
+	 position: fixed;
+	 top: 0;
+}
+ #lqo .App ::-webkit-scrollbar {
+	 width: 5px;
+}
+ #lqo .App ::-webkit-scrollbar-track {
+	 background: #f1f1f1;
+}
+ #lqo .App ::-webkit-scrollbar-thumb {
+	 background: #888;
+	 border-radius: 2.5px;
+}
+ #lqo .App ::-webkit-scrollbar-thumb:hover {
+	 background: #555;
+}
+ #lqo *, #lqo *::after, #lqo *::before {
+	 box-sizing: border-box;
+}
+html {
+	 font-size: 62.5%;
+}
+ #lqo {
+	 font-family: "Avenir", Arial, Helvetica, sans-serif;
+	 color: var(--color-body-darker);
+	 font-size: 2.4rem;
+}
+ #lqo h2 {
+	 font-size: 4.1vw;
+	 color: var(--color-body-darker);
+	 font-weight: 600;
+	 line-height: 5.3vw;
+	 margin-top: 0;
+	 margin-bottom: 4.88vw;
+	 max-width: 90%;
+}
+ #lqo .running-tally h2 {
+	 font-size: 5vw;
+	 text-align: center;
+}
+ @media screen and (min-width: 820px) {
+	 #lqo h2 {
+		 font-size: 1.8rem;
+		 margin-bottom: 1rem;
+		 margin-top: 0;
+		 line-height: 2rem;
+	}
+	 #lqo .running-tally h2 {
+		 font-size: 2.5rem;
+		 margin-bottom: 20px;
+	}
+}
+ #lqo .btn {
+	 border: 0;
+	 padding: 2vw 3vw;
+	 background: var(--color-primary);
+	 color: white;
+	 border-radius: 5px;
+	 font-size: 4.27vw;
+	 line-height: 4.27vw;
+	 margin-top: 0;
+	 cursor: pointer;
+	 box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+ #lqo .btn--order {
+	 display: flex;
+	 align-items: center;
+	 justify-content: space-between;
+	 position: absolute;
+}
+ #lqo .btn--light {
+	 color: var(--color-primary);
+	 background: none;
+	 border: 1px solid var(--color-primary);
+}
+ #lqo .btn--view-tally {
+	 clip-path: polygon(25% 0%, 100% 0, 100% 100%, 25% 100%, 9% 51%);
+	 width: 9.88vw;
+	 height: 30.98vw;
+	 background: var(--color-primary);
+	 transition: all 0.3s;
+	 cursor: pointer;
+	 font-size: 4.27vw;
+	 line-height: 427vw;
+	 color: white;
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+	 border: 0;
+	 border-radius: 5px;
+	 box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+ #lqo .btn--view-tally__content {
+	 white-space: nowrap;
+	 transform: rotate(270deg);
+	 font-weight: 400;
+	 padding-top: 8px;
+}
+ #lqo .disabled {
+	 opacity: 0.6;
+	 pointer-events: none;
+}
+ @media Screen and (min-width: 820px) {
+	 #lqo .btn {
+		 padding: 8px 18px;
+		 font-size: 1.6rem;
+		 line-height: 1.6rem;
+	}
+	 #lqo .btn--order {
+		 padding: 3px 12px;
+	}
+	 #lqo .btn--view-tally {
+		 width: 40px;
+		 height: 120px;
+		 font-size: 1.6rem;
+	}
+}
+ #lqo .close-btn {
+	 border: 0;
+	 background: none;
+	 padding: 0;
+	 margin-left: 0;
+	 margin-right: 0;
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+	 cursor: pointer;
+}
+ #lqo .close-btn .icon {
+	 width: 4.88vw;
+	 height: 4.88vw;
+}
+ #lqo .close-btn--small .icon {
+	 width: 4.27vw;
+	 height: 4.27vw;
+}
+ #lqo .close-btn .icon g, #lqo .close-btn--small .icon g {
+	 fill: #222;
+}
+ @media screen and (min-width: 820px) {
+	 #lqo .close-btn .icon {
+		 width: 20px;
+		 height: 20px;
+	}
+}
+ #lqo .grid--1x2 {
+	 display: flex;
+	 justify-content: space-between;
+}
+ #lqo .btn-container--single {
+	 display: flex;
+	 justify-content: center;
+	 padding-top: 2.684vw;
+}
+ #lqo .btn-container--double {
+	 display: flex;
+	 justify-content: space-between;
+	 padding-top: 2.684vw;
+}
+ @media screen and (min-width: 820px) {
+	 #lqo .btn-container--single {
+		 margin-right: 30px;
+		 justify-content: flex-end;
+		 padding-top: 15px;
+	}
+	 #lqo .btn-container--double {
+		 padding-top: 20px;
+		 margin-left: 50px;
+		 margin-right: 50px;
+	}
+}
+ #lqo .base {
+	 background: var(--color-background);
+	 border-radius: 25px;
+	 padding: 4.88vw;
+	 box-shadow: 0 0 10px rgba(17, 17, 17, 0.3);
+	 margin: auto;
+}
+ #lqo .base--medium {
+	 width: 87vw;
+}
+ #lqo .base--small {
+	 width: 61vw;
+	 padding: 20px;
+}
+ @media screen and (min-width: 820px) {
+	 #lqo .base {
+		 padding: 20px;
+		 width: 820px;
+	}
+	 #lqo .base--medium {
+		 width: 740px;
+	}
+}
+ #lqo .top-bar {
+	 display: flex;
+	 justify-content: space-between;
+}
+ #lqo .top-bar__title {
+	 color: var(--color-body-darker);
+	 font-size: 3.66vw;
+	 font-weight: 300;
+}
+ #lqo .viewnote .top-bar {
+	 padding-bottom: 1.83vw;
+	 margin-bottom: 3.05vw;
+}
+ #lqo .viewnote .top-bar {
+	 border-bottom: 1px solid var(--color-border);
+}
+ #lqo .viewnote__content {
+	 height: 25.62vw;
+	 border-radius: 10px;
+	 border: 1px solid var(--color-border);
+	 width: 100%;
+	 outline: none;
+	 padding: 5px;
+	 font-size: 2.44vw;
+	 overflow-y: auto;
+}
+ #lqo .viewnote__content.input {
+	 resize: none;
+}
+ @media screen and (max-width: 680px) {
+	 #lqo .viewnote__content {
+		 font-size: 15.76px;
+	}
+}
+ #lqo .model {
+	 position: fixed;
+	 right: 0;
+	 left: 0;
+	 min-height: 100vh;
+	 height: 100%;
+	 background-color: rgba(0, 0, 0, 0.6);
+	 overflow-y: auto;
+	 overflow-x: hidden;
+	 opacity: 1;
+	 transition: all 0.2s;
+}
+ #lqo .model.model--close {
+	 opacity: 0;
+	 max-width: 0;
+	 max-height: 0;
+}
+ #lqo .background--dark {
+	 position: fixed;
+	 right: 0;
+	 left: 0;
+	 min-height: 100vh;
+	 height: 100%;
+	 background-color: rgba(0, 0, 0, 0.8);
+}
+ #lqo .viewnote {
+	 z-index: 4;
+}
+ #lqo .running-tally {
+	 z-index: 3;
+}
+ #lqo .choose-option {
+	 z-index: 2;
+}
+ #lqo .container {
+	 margin-left: 20px;
+	 margin-right: 20px;
+}
+ #lqo .choose-option .container {
+	 margin-top: 3.66vw;
+	 margin-bottom: 3.66vw;
+}
+ #lqo .running-tally .container {
+	 margin-top: 12vw;
+	 margin-bottom: 3.66vw;
+}
+ #lqo .viewnote .container {
+	 margin-top: 18vw;
+}
+ @media screen and (min-width: 820px) {
+	 #lqo .viewnote {
+		 display: none;
+	}
+	 #lqo .choose-option .container {
+		 margin-top: 50px;
+		 margin-bottom: 50px;
+	}
+	 #lqo .running-tally .container {
+		 margin-top: 75px;
+		 margin-bottom: 50px;
+	}
+}
+ #lqo .dropdown-base {
+	 width: 61.85vw;
+	 height: 9.76vw;
+	 font-size: 4.27vw;
+	 color: white;
+	 background: var(--color-background);
+	 border: 1px solid var(--color-border);
+	 border-radius: 5px;
+	 overflow: hidden;
+	 position: relative;
+	 display: flex;
+	 justify-content: center;
+	 align-items: center;
+	 margin-bottom: 4.88vw;
+	 transition: all 0.2s;
+}
+ #lqo .dropdown-base:hover {
+	 border: 1px solid #a7a6a6;
+}
+ #lqo .dropdown-base .select {
+	 width: 100%;
+	 height: 2.562vw;
+	 background: url("../images/downarrow.svg") no-repeat;
+	 background-position: 95% center;
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+}
+ #lqo .dropdown-base .select select {
+	 color: var(--color-body-darker);
+	 background: transparent;
+	 border: 0;
+	 padding: 0;
+	 border-radius: 0;
+	 width: 100%;
+	 position: relative;
+	 z-index: 1;
+	 font-size: 1em;
+	 outline: none;
+	 padding-left: 2.562vw;
+}
+ #lqo select {
+	 -moz-appearance: none;
+	 -webkit-appearance: none;
+}
+ #lqo select::-ms-expand {
+	 display: none;
+}
+ @media screen and (min-width: 820px) {
+	 #lqo .dropdown-base {
+		 width: 250px;
+		 height: 33px;
+		 font-size: 16px;
+		 margin-bottom: 10px;
+	}
+	 #lqo .dropdown-base .select {
+		 height: 10px;
+	}
+	 #lqo .dropdown-base .select select {
+		 padding-left: 10px;
+	}
+}
+ #lqo .table-base {
+	 width: 100%;
+	 height: 57.78vw;
+	 border: 1px solid var(--color-border);
+	 border-radius: 10px;
+	 overflow-y: auto;
+}
+ #lqo .table {
+	 width: 100%;
+	 padding: 3.66vw 2.44vw 2.44vw 2.44vw;
+	 text-align: left;
+}
+ #lqo .table__head {
+	 font-size: 3.22vw;
+}
+ #lqo .table th {
+	 border-bottom: 1px solid var(--color-border);
+	 border-collapse: collapse;
+	 padding-bottom: 2.44vw;
+}
+ #lqo .table .product {
+	 padding-left: 2.44vw;
+	 width: 49%;
+}
+ #lqo .table .uom {
+	 width: 17%;
+	 text-align: center;
+}
+ #lqo .table .qty {
+	 width: 17%;
+	 text-align: center;
+}
+ #lqo .table .note {
+	 text-align: center;
+}
+ #lqo .empty-note {
+	 text-align: center;
+	 font-size: 3.44vw;
+	 font-weight: 300;
+	 margin-top: 6vw;
+}
+ @media screen and (min-width: 820px) {
+	 #lqo .table-base {
+		 height: 223px;
+	}
+	 #lqo .table {
+		 padding: 15px 20px 0px 20px;
+	}
+	 #lqo .table__head {
+		 font-size: 1.6rem;
+	}
+	 #lqo .table th {
+		 padding-bottom: 15px;
+	}
+	 #lqo .table .product {
+		 padding-left: 10px;
+	}
+	 #lqo .table .uom {
+		 width: 10%;
+		 text-align: center;
+	}
+	 #lqo .table .qty {
+		 width: 10%;
+		 text-align: center;
+	}
+	 #lqo .table .note {
+		 text-align: left;
+		 padding-left: 10px;
+		 width: 40%;
+	}
+}
+ #lqo .table tbody {
+	 font-size: 3.44vw;
+	 overflow: hidden;
+}
+ #lqo .table tbody tr:last-child td {
+	 border-bottom: none;
+}
+ @media screen and (max-width: 600px) {
+	 #lqo .table tbody {
+		 font-size: 1.5rem;
+	}
+}
+ #lqo .table tbody tr td:nth-child(1) {
+	 padding-left: 1.22vw;
+}
+ #lqo .table tbody tr td:nth-child(2), #lqo .table tbody tr td:nth-child(3), #lqo .table tbody tr td:nth-child(4) {
+	 text-align: center;
+}
+ #lqo .table tr td {
+	 height: 12.2vw;
+	 border-bottom: 1px solid var(--color-border);
+}
+ #lqo .qty-input {
+	 outline: none;
+	 width: 10.54vw;
+	 height: 8.4vw;
+	 border: 1px solid var(--color-border);
+	 border-radius: 5px;
+	 text-align: center;
+	 transition: all 0.2s;
+}
+ #lqo .qty-input:hover {
+	 border: 1px solid #a7a6a6;
+}
+ @media screen and (min-width: 820px) {
+	 #lqo .table tbody tr td:nth-child(1) {
+		 padding-left: 10px;
+	}
+	 #lqo .table tbody {
+		 font-size: 1.4rem;
+	}
+	 #lqo .table tbody tr td:nth-child(4) {
+		 text-align: left;
+	}
+	 #lqo .table tr td {
+		 height: 4.4rem;
+	}
+	 #lqo .qty-input {
+		 outline: none;
+		 width: 40px;
+		 height: 30px;
+	}
+	 #lqo .popup {
+		 display: none;
+	}
+	 #lqo .btn--order .popup {
+		 display: block;
+		 width: 30px;
+		 height: 30px;
+		 padding-right: 5px;
+	}
+	 #lqo .empty-note {
+		 font-size: 1.8rem;
+		 margin-top: 50px;
+	}
+}
+ #lqo .btn-popup {
+	 outline: 0;
+	 background: none;
+	 border: 0;
+	 padding: 0;
+	 margin: 0;
+	 cursor: pointer;
+}
+ #lqo .popup {
+	 width: 6.1vw;
+	 height: 6.1vw;
+}
+ #lqo .popup g {
+	 fill: var(--color-body-darker);
+}
+ #lqo .popup--blur g {
+	 fill: #00f;
+}
+ #lqo .btn--order .popup g {
+	 fill: #111;
+}
+ #lqo .btn--order .popup {
+	 padding-right: 1vw;
+}
+ #lqo .note-input {
+	 outline: none;
+	 width: 100%;
+	 min-height: 35px;
+	 height: 35px;
+	 max-height: 100px;
+	 border: 1px solid var(--color-border);
+	 border-radius: 5px;
+	 text-align: left;
+	 resize: vertical;
+	 outline: none;
+	 padding: 5px;
+	 font-size: 1.6rem;
+	 transition: all 0.2s;
+}
+ #lqo .note-input:hover {
+	 border: 1px solid #a7a6a6;
+}
+ #lqo .note-output {
+	 margin: 0;
+	 padding: 5px;
+	 font-size: 1.6rem;
+	 display: inline-block;
+}
+ @media screen and (max-width: 819px) {
+	 #lqo .note-input, #lqo .note-output {
+		 display: none;
+	}
+}
+ #lqo .running-tally .table-base {
+	 height: 98.33vw;
+}
+ #lqo .running-tally-note {
+	 display: none;
+}
+ @media screen and (min-width: 820px) {
+	 #lqo .running-tally .table-base {
+		 height: 309px;
+	}
+	 #lqo .running-tally-note {
+		 display: block;
+		 margin: 0;
+		 font-size: 1.4rem;
+		 text-transform: none;
+	}
+}
+ 

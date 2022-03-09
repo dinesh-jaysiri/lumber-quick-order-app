@@ -1,17 +1,31 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./css/normalize.css";
+import "./index.css";
+import "./css/styles.css";
+import App from "./App";
+import { NavigationProvider } from "./contexts/Navigation";
+import { DataProvider } from "./contexts/Data";
+import { LevelsProvider } from "./contexts/Levels";
+import { ProductsProvider } from "./contexts/Product";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
+const widgetDivs = document.querySelectorAll(".lumber-quick-order-widget");
+
+
+widgetDivs.forEach((div) => {
+  ReactDOM.render(
+    <React.StrictMode>
+    <NavigationProvider>
+      <DataProvider>
+        <LevelsProvider>
+          <ProductsProvider>
+              <App postData={div.dataset.postData} />
+          </ProductsProvider>
+        </LevelsProvider>
+      </DataProvider>
+    </NavigationProvider>
   </React.StrictMode>,
-  document.getElementById('root')
-);
+    div
+  );
+});
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

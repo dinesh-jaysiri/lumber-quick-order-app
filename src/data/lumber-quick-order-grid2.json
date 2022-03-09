@@ -1,0 +1,94 @@
+{
+    "instructions" : "Choose Lumber Type",
+    "title":"",
+    "options" : [
+        {
+            "title" : "Framing",
+            "instructions" : "Choose Nominal Size",
+            "options" : [
+                {
+                    "title" : "2 x 3 Douglas Fir",
+                    "instructions" : "Choose Quantities",
+                    "skus" : [
+                        {
+                            "sku" : "238F",
+                            "name" : "2 x 3 x 8 ft. Spruce / Pine / Fir - Kiln Dried",
+                            "price" : 5.12,
+                            "uom" : "Each"
+                        },
+                        {
+                            "sku" : "2310F",
+                            "name" : "2 x 3 x 10 ft. Spruce / Pine / Fir - Kiln-Dried",
+                            "price" : 6.40,
+                            "uom" : "Each"
+                        }
+                    ]
+                },
+                {
+                    "title" : "2 x 4 Douglas Fir",
+                    "instructions" : "Choose Quantities",
+                    "skus" : [
+                        {
+                            "sku" : "248F",
+                            "name" : "2 x 4 x 8 ft #2 Premium Grade Douglas Fir, Kiln-Dried",
+                            "price" : 5.76,
+                            "uom" : "Each"
+                        },
+                        {
+                            "sku" : "2410F",
+                            "name" : "2 x 4 x 10 ft. #2 & Better Grade Green Douglas Fir",
+                            "price" : 7.70,
+                            "uom" : "Each"
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "title" : "Western Red Cedar",
+            "instructions" : "Choose Nominal Size",
+            "options" : [
+                {
+                    "title" : "Boards A&Btr S1S2E 1 x",
+                    "instructions" : "Specify Linear Feet and Request Board Lengths",
+                    "skus" : [
+                        {
+                            "sku" : "14AC",
+                            "name" : "1 x 4 A & BTR. Western Red Cedar VG Boards S1S-2E",
+                            "price" : 5.70,
+                            "uom" : "LNFT",
+                            "note_placeholder" : "Requested lengths"
+                        },
+                        {
+                            "sku" : "16AC",
+                            "name" : "1 x 6 A & BTR. Western Red Cedar VG Boards S1S-2E",
+                            "price" : 8.40,
+                            "uom" : "LNFT",
+                            "note_placeholder" : "Requested lengths"
+                        }
+                    ]
+                },
+                {
+                    "title" : "Boards A&Btr S1S2E 5/4 x",
+                    "instructions" : "Specify Linear Feet and Request Board Lengths",
+                    "skus" : [
+                        {
+                            "sku" : "544CC",
+                            "name" : "⁵⁄₄ x 4 A & BTR. Western Red Cedar VG Boards S1S-2E",
+                            "price" : 7.40,
+                            "uom" : "LNFT",
+                            "note_placeholder" : "Requested lengths"
+                        },
+                        {
+                            "sku" : "546CC",
+                            "name" : "⁵⁄₄ x 6 A & BTR. Western Red Cedar VG Boards S1S-2E",
+                            "price" : 12.00,
+                            "uom" : "LNFT",
+                            "note_placeholder" : "Requested lengths"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

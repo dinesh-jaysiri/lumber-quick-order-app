@@ -1,0 +1,11 @@
+{id: 0, title: '', instructions: 'Choose Lumber Type', level: 1, uplevel_id: ''}
+
+{id: 1, title: 'Framing', instructions: 'Choose Nominal Size', level: 2, uplevel_id: 0}
+
+{id: 2, title: '2 x 3 Douglas Fir', instructions: 'Choose Quantities', level: 3, uplevel_id: 1}
+
+{id: 3, title: '2 x 4 Douglas Fir', instructions: 'Choose Quantities', level: 3, uplevel_id: 1}
+
+{id: 4, title: 'Western Red Cedar', instructions: 'Choose Nominal Size', level: 2, uplevel_id: 0}
+
+{id: 5, title: 'Boards A&Btr S1S2E 1 x', instructions: 'Specify Linear Feet and Request Board Lengths', level: 3, uplevel_id: 4}
