@@ -69,7 +69,7 @@ function TableInput({ item, type }) {
           />
           
         ) : (
-          <p className="note-output">{item.note?item.note:"--"}</p>
+          <div className="note-output">{item.note?item.note:"--"}</div>
         )}
       </td>
     </tr>
