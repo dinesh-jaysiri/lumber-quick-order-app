@@ -1,9 +1,9 @@
 import React from "react";
-import TableInput from "./TableInput";
 import TopBar from "./TopBar";
 import { useNavigation } from "../contexts/Navigation";
 import { useProduct } from "../contexts/Product";
 import { useLevels } from "../contexts/Levels";
+import TableRowRunningTally from "./TableRowRunningTally";
 function RunningTally({ children }) {
   const { showTally, setShowTally } = useNavigation();
   const { productProvider, resetProducts } = useProduct();
@@ -32,15 +32,20 @@ function RunningTally({ children }) {
               <table className="table">
                 <thead>
                   <tr className="table__head">
-                    <th className="product">Product</th>
-                    <th className="qty">Qty</th>
-                    <th className="uom">Price</th>
-                    <th className="note">Note</th>
+                    <th className="tally-product">Product</th>
+                    <th className="tally-qty">Qty</th>
+                    <th className="tally-price">Price</th>
+                    <th className="tally-note">Note</th>
+                    <th className="tally-delete"></th>
                   </tr>
                 </thead>
                 <tbody>
                   {productList.map((item) => (
-                    <TableInput key={item.sku} item={item} type="output" />
+                    <TableRowRunningTally
+                      key={item.sku}
+                      item={item}
+                      type="output"
+                    />
                   ))}
                 </tbody>
               </table>

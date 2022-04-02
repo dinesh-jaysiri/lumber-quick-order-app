@@ -50,13 +50,17 @@ function TableInput({ item, type }) {
           />
         )}
       </td>
-      <td>{type === "output" ?`$ ${price.toFixed(2)}` :item.uom}</td>
+      <td>{type === "output" ? `$ ${price.toFixed(2)}` : item.uom}</td>
       <td>
         <button
           onClick={() => setNoteWindow({ showNote: true, type, item })}
-          className="btn-popup"
+          className="btn-cover"
         >
-          <Popup className={item.tempNote && type==="input" ? "popup popup--blur" : "popup"} />
+          <Popup
+            className={
+              item.tempNote && type === "input" ? "popup popup--blur" : "popup"
+            }
+          />
         </button>
 
         {type === "input" ? (
@@ -67,9 +71,8 @@ function TableInput({ item, type }) {
             {...register("note")}
             onBlur={handleSubmit(onSubmit)}
           />
-          
         ) : (
-          <div className="note-output">{item.note?item.note:"--"}</div>
+          <div className="note-output">{item.note ? item.note : "--"}</div>
         )}
       </td>
     </tr>

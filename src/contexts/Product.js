@@ -15,6 +15,9 @@ const productReducer = (state, action) => {
       return [...state].map(n => n.sku === action.data.item.sku ? { ...n, tempQty: action.data.data.qty, tempNote: action.data.data.note } : n);
     case "ADDDATA":
       return [...state].map((n) => action.data.includes(n)?{...n, qty:n.tempQty,note:n.tempNote}:n);
+
+    case "DELETE": 
+      return [...state].map(n=> n.sku === action.data.sku ? {...n, tempNote:"",tempQty:"",qty:"",note:""}:n)
       
     default:
       return [...state];
