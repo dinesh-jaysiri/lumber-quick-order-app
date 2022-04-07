@@ -60,6 +60,8 @@ h2 {
 .running-tally h2 {
   font-size: 5vw;
   text-align: center;
+  margin:auto;
+  font-weight: 300;
 }
 
 @media screen and (min-width:640px) {
@@ -105,7 +107,7 @@ h2 {
 }
 
 .btn--view-tally {
-  clip-path: polygon(25% 0%, 100% 0, 100% 100%, 25% 100%, 9% 51%);
+  clip-path: polygon(40% 0%, 100% 0, 100% 100%, 40% 100%, 10% 50%);
   width: 9.88vw;
   height: 30.98vw;
   background: $color-primary;
@@ -119,7 +121,7 @@ h2 {
   justify-content: center;
   border: 0;
   border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.4);
 }
 
 .btn--view-tally__content {
@@ -147,6 +149,9 @@ h2 {
     width: 40px;
     height: 120px;
     font-size: 16px;
+  }
+  .btn--view-tally:hover {
+    width: 44px;
   }
 }
 
